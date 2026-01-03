@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-03T18:15:03 IST" name="Default suite" finished-at="2026-01-03T18:16:29 IST" duration-ms="85752">
+  <suite started-at="2026-01-03T19:46:18 IST" name="Default suite" finished-at="2026-01-03T19:47:39 IST" duration-ms="81173">
     <groups>
     </groups>
-    <test started-at="2026-01-03T18:15:03 IST" name="Default test" finished-at="2026-01-03T18:16:29 IST" duration-ms="85752">
-      <class name="tests.cartTest">
-        <test-method is-config="true" signature="serviceStart()[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:15:03 IST" name="serviceStart" finished-at="2026-01-03T18:15:08 IST" duration-ms="5213" status="PASS">
+    <test started-at="2026-01-03T19:46:18 IST" name="Default test" finished-at="2026-01-03T19:47:39 IST" duration-ms="81173">
+      <class name="tests.loginTest">
+        <test-method is-config="true" signature="serviceStart()[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:46:18 IST" name="serviceStart" finished-at="2026-01-03T19:46:22 IST" duration-ms="3958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceStart -->
-        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:15:08 IST" name="resetAppBeforeTest" finished-at="2026-01-03T18:15:09 IST" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:46:22 IST" name="resetAppBeforeTest" finished-at="2026-01-03T19:46:22 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppBeforeTest -->
-        <test-method signature="CartTest(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:15:09 IST" name="CartTest" data-provider="loginData" finished-at="2026-01-03T18:15:42 IST" duration-ms="33278" status="PASS">
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:46:22 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T19:46:57 IST" duration-ms="35563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,18 +34,18 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[[Ljava.lang.String;@7aad3f7d]]>
+                <![CDATA[[Ljava.lang.String;@69ce2f62]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CartTest -->
-        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:15:42 IST" name="resetAppBeforeTest" finished-at="2026-01-03T18:15:42 IST" duration-ms="422" status="PASS">
+        </test-method> <!-- shouldBeLogin -->
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:46:57 IST" name="resetAppBeforeTest" finished-at="2026-01-03T19:46:58 IST" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppBeforeTest -->
-        <test-method signature="CartTest(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:15:42 IST" name="CartTest" data-provider="loginData" finished-at="2026-01-03T18:16:02 IST" duration-ms="20083" status="PASS">
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:46:58 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T19:47:10 IST" duration-ms="11781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,18 +64,18 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[[Ljava.lang.String;@6f667ad1]]>
+                <![CDATA[[Ljava.lang.String;@77128dab]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CartTest -->
-        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:16:02 IST" name="resetAppBeforeTest" finished-at="2026-01-03T18:16:03 IST" duration-ms="467" status="PASS">
+        </test-method> <!-- shouldBeLogin -->
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:47:10 IST" name="resetAppBeforeTest" finished-at="2026-01-03T19:47:11 IST" duration-ms="650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppBeforeTest -->
-        <test-method signature="CartTest(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.cartTest@29a5f4e7]" started-at="2026-01-03T18:16:03 IST" name="CartTest" data-provider="loginData" finished-at="2026-01-03T18:16:29 IST" duration-ms="25778" status="PASS">
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@27e47833]" started-at="2026-01-03T19:47:11 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T19:47:39 IST" duration-ms="28199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,14 +94,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[[Ljava.lang.String;@566d0c69]]>
+                <![CDATA[[Ljava.lang.String;@63429932]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CartTest -->
-      </class> <!-- tests.cartTest -->
+        </test-method> <!-- shouldBeLogin -->
+      </class> <!-- tests.loginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
