@@ -7,6 +7,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import dataproviders.TestDataProvider;
 import flows.Appflows;
 import pages.ProductPage;
 
@@ -14,12 +15,14 @@ import pages.ProductPage;
 public class loginTest extends BaseClass{
 	
 	
-	@Test
-	public void shouldBeLogin() {
+	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class)
+	public void shouldBeLogin(String country, String name, String gender, String[] products) {	
+		
 		Appflows flows = new Appflows(driver);
-		ProductPage product = new ProductPage(driver);
-		flows.loginToProductPage();
-		//Assert.assertTrue(false, "Intentional UI failure");
+		ProductPage product = flows.loginToProductPage(country, name, gender);
+
 		Assert.assertTrue(product.isTitleDisplayed(), "Title is not displayed");
 	}	
 }
+
+

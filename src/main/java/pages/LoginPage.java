@@ -39,8 +39,9 @@ public class LoginPage extends BasePage{
 		}
 	}
 	
-	public void shopButtonClick() {
-		click(shopButton);
+	public ProductPage shopButtonClick() {
+	    click(shopButton);
+	    return new ProductPage(driver);
 	}
 	
 	

@@ -1,17 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-03T12:05:45 IST" name="Default suite" finished-at="2026-01-03T12:06:11 IST" duration-ms="26009">
+  <suite started-at="2026-01-03T15:25:53 IST" name="Default suite" finished-at="2026-01-03T15:26:49 IST" duration-ms="55689">
     <groups>
     </groups>
-    <test started-at="2026-01-03T12:05:45 IST" name="Default test" finished-at="2026-01-03T12:06:11 IST" duration-ms="26009">
+    <test started-at="2026-01-03T15:25:53 IST" name="Default test" finished-at="2026-01-03T15:26:49 IST" duration-ms="55689">
       <class name="tests.loginTest">
-        <test-method is-config="true" signature="serviceStart()[pri:0, instance:tests.loginTest@29a5f4e7]" started-at="2026-01-03T12:05:45 IST" name="serviceStart" finished-at="2026-01-03T12:05:48 IST" duration-ms="2976" status="PASS">
+        <test-method is-config="true" signature="serviceStart()[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:25:53 IST" name="serviceStart" finished-at="2026-01-03T15:25:56 IST" duration-ms="3004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceStart -->
-        <test-method signature="shouldBeLogin()[pri:0, instance:tests.loginTest@29a5f4e7]" started-at="2026-01-03T12:05:48 IST" name="shouldBeLogin" finished-at="2026-01-03T12:06:11 IST" duration-ms="23014" status="PASS">
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:25:56 IST" name="resetAppBeforeTest" finished-at="2026-01-03T15:25:56 IST" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppBeforeTest -->
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:25:56 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T15:26:20 IST" duration-ms="23042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dominica]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bryan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[Ljava.lang.String;@511d5d04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeLogin -->
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:26:20 IST" name="resetAppBeforeTest" finished-at="2026-01-03T15:26:20 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppBeforeTest -->
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:26:20 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T15:26:31 IST" duration-ms="10649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alex]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[Ljava.lang.String;@27068a50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeLogin -->
+        <test-method is-config="true" signature="resetAppBeforeTest()[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:26:31 IST" name="resetAppBeforeTest" finished-at="2026-01-03T15:26:31 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppBeforeTest -->
+        <test-method signature="shouldBeLogin(java.lang.String,java.lang.String,java.lang.String,[Ljava.lang.String;)[pri:0, instance:tests.loginTest@44a59da3]" started-at="2026-01-03T15:26:31 IST" name="shouldBeLogin" data-provider="loginData" finished-at="2026-01-03T15:26:49 IST" duration-ms="17731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Domina]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[Ljava.lang.String;@682c1e93]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeLogin -->

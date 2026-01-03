@@ -18,18 +18,17 @@ public class Appflows {
 		
 	}
 	
-	public void loginToProductPage() {
-		loginPage.openCountry("Dominica");
-		loginPage.enterName("Bryan");
-		loginPage.genderSelect("Female");
-		loginPage.shopButtonClick();
+	public ProductPage loginToProductPage(String country, String name, String gender) {
+		loginPage.openCountry(country);
+		loginPage.enterName(name);
+		loginPage.genderSelect(gender);
+		return loginPage.shopButtonClick();
 	} 
 	
-	public void productToCartPage() {
+	public void productToCartPage(String productName) {
 		productPage.isTitleDisplayed();
-		productPage.addToCartProduct("Air Jordan 1 Mid SE");
-		productPage.gestures.scrollToText("PG 3");
-		productPage.addToCartProduct("PG 3");
+		productPage.gestures.scrollToText(productName);
+		productPage.addToCartProduct(productName);
 	}
 	
 	public void goToCartPage() {

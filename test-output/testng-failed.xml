@@ -5,7 +5,8 @@
     <classes>
       <class name="tests.loginTest">
         <methods>
-          <include name="shouldBeLogin"/>
+          <include name="resetAppBeforeTest"/>
+          <include name="shouldBeLogin" invocation-numbers="1 2"/>
           <include name="serviceStart"/>
         </methods>
       </class> <!-- tests.loginTest -->
