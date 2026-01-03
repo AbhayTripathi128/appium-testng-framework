@@ -1,4 +1,3 @@
-![CI](https://github.com/AbhayTripathi128/appium-testng-framework/blob/main/.github/workflows/appium-ci.yml/badge.svg)
 
 📱 Appium TestNG Automation Framework
 A scalable mobile automation framework built using Appium + TestNG + Java, designed with Page Object Model (POM), Flows, and Data-Driven Testing, and integrated with GitHub Actions CI.
