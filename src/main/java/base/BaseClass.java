@@ -13,6 +13,10 @@ public class BaseClass {
 	
 	public AndroidDriver driver;
 	
+	public AndroidDriver getDriver() {
+	    return driver;
+	}
+	
 	@BeforeClass
 	public void serviceStart() throws MalformedURLException, URISyntaxException {
 		

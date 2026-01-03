@@ -15,3 +15,7 @@ target/
 
 # OS
 .DS_Store
+
+# Runtime artifacts
+logs/
+screenshots/
