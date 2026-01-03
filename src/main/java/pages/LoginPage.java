@@ -43,7 +43,5 @@ public class LoginPage extends BasePage{
 	    click(shopButton);
 	    return new ProductPage(driver);
 	}
-	
-	
-	
+
 }

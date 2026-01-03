@@ -16,7 +16,7 @@ public class loginTest extends BaseClass{
 	
 	
 	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class)
-	public void shouldBeLogin(String country, String name, String gender, String[] products) {	
+	public void shouldBeLogin(String country, String name, String gender) {	
 		
 		Appflows flows = new Appflows(driver);
 		ProductPage product = flows.loginToProductPage(country, name, gender);

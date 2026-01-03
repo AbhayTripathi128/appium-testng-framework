@@ -4,22 +4,28 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import dataproviders.TestDataProvider;
 import flows.Appflows;
 import pages.CartPage;
+import pages.ProductPage;
 
 public class cartTest extends BaseClass{
 	
-	@Test
-	public void CartTest() throws Exception {
+	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class)
+	public void CartTest(String country, String name, String gender, String[] products) {
 		
 		Appflows flows = new Appflows(driver);
-		CartPage cart = new CartPage(driver);
-		flows.loginToProductPage();
-		flows.productToCartPage();
-		flows.goToCartPage();
 		
-		Assert.assertTrue(cart.isCartTitleDisplayed(), "Cart title is not displayed");
+		ProductPage product = flows.loginToProductPage(country, name, gender);
+		for(String productName: products) {
+			flows.productToCartPage(productName);
+		}
+		
+		CartPage cart = product.goToCart();
+		
+		double expectedTotal = cart.getTotalAmountvalue();
+		double actualTotal = cart.getSumofProducts();
+		
+		Assert.assertEquals(actualTotal, expectedTotal, "total amount is not matching");
 	}
-	
-	
 }

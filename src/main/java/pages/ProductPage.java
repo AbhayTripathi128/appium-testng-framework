@@ -12,8 +12,8 @@ public class ProductPage extends BasePage{
 	}
 	
 	private By titleTest = By.id("com.androidsample.generalstore:id/toolbar_title");
-	private By cartIcon = By.id("com.androidsample.generalstore:id/appbar_btn_cart");
 	private By cartCount = By.id("com.androidsample.generalstore:id/counterText");
+	private By cartIcon = By.id("com.androidsample.generalstore:id/appbar_btn_cart");
 	
 	
 	public boolean isTitleDisplayed() {
@@ -34,8 +34,9 @@ public class ProductPage extends BasePage{
 		return isDisplayed(cartCount);
 	}
 	
-	public void goToCart() {
+	public CartPage goToCart() {
 		click(cartIcon);
+		return new CartPage(driver);
 	}
 	
 }

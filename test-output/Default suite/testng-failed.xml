@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.loginTest">
+      <class name="tests.cartTest">
         <methods>
           <include name="resetAppBeforeTest"/>
-          <include name="shouldBeLogin" invocation-numbers="1 2"/>
           <include name="serviceStart"/>
+          <include name="CartTest" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- tests.loginTest -->
+      </class> <!-- tests.cartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
